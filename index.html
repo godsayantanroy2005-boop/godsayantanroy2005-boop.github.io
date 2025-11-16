@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="google-site-verification" content="X2LFjzvHXlUFFSJC2YvAFvyN0HCzdtAE0Lf5y6vyR7c" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sayantan Roy | Developer Portfolio</title>
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Sayantan Roy | Full Stack Developer & Cloud Enthusiast — I design and build modern, responsive web applications using React, Node.js, and cloud technologies. Explore my portfolio to see my projects, skills, and how to contact me.">
+  <meta name="keywords" content="Sayantan Roy, Full Stack Developer, Web Developer, React, Node.js, MERN, JavaScript, HTML, CSS, Portfolio, Cloud Enthusiast, India">
+  <meta name="author" content="Sayantan Roy">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (for social media previews like LinkedIn, Facebook, WhatsApp) -->
+  <meta property="og:title" content="Sayantan Roy | Developer Portfolio">
+  <meta property="og:description" content="Explore Sayantan Roy’s projects, skills, and ways to contact him.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://godsayantanroy2005-boop.github.io/">
+  <meta property="og:image" content="https://i.ibb.co/VcbKLsdK/your-photo.jpg">
+
+  <!-- Twitter Card (for Twitter/X previews) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sayantan Roy | Developer Portfolio">
+  <meta name="twitter:description" content="Explore my full stack web projects and developer portfolio.">
+  <meta name="twitter:image" content="https://i.ibb.co/VcbKLsdK/your-photo.jpg">
+  
+  <!-- JSON-LD structured data: Person, WebSite, Projects -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://godsayantanroy2005-boop.github.io/#person",
+      "name": "Sayantan Roy",
+      "givenName": "Sayantan",
+      "jobTitle": "Full Stack Developer & Cloud Enthusiast",
+      "url": "https://godsayantanroy2005-boop.github.io/",
+      "sameAs": [
+        "https://github.com/godsayantanroy2005-boop",
+        "https://in.linkedin.com/in/sayantan-roy-b9416b325",
+        "https://www.instagram.com/i_am_invincible_6"
+      ],
+      "image": "https://i.ibb.co/VcbKLsdK/your-photo.jpg",
+      "description": "Full Stack Developer working with React, Node.js, TypeScript and cloud technologies. I build responsive, performant web applications and scalable backends.",
+      "knowsAbout": ["React", "Node.js", "TypeScript", "MERN", "Cloud", "Docker", "Tailwind CSS"]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://godsayantanroy2005-boop.github.io/#website",
+      "url": "https://godsayantanroy2005-boop.github.io/",
+      "name": "Sayantan Roy | Developer Portfolio",
+      "publisher": {
+        "@id": "https://godsayantanroy2005-boop.github.io/#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://godsayantanroy2005-boop.github.io/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://godsayantanroy2005-boop.github.io/#project-ecommerce",
+      "name": "E-commerce Microservice Platform",
+      "url": "https://godsayantanroy2005-boop.github.io/projects#ecommerce-microservice",
+      "description": "A scalable full-stack app using React, Node.js, and Docker microservices. Includes product, cart and payment microservices.",
+      "creator": { "@id": "https://godsayantanroy2005-boop.github.io/#person" }
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://godsayantanroy2005-boop.github.io/#project-dashboard",
+      "name": "Real-Time Data Dashboard",
+      "url": "https://godsayantanroy2005-boop.github.io/projects#real-time-dashboard",
+      "description": "A responsive analytics dashboard with D3.js, Flask backend and WebSocket live updates.",
+      "creator": { "@id": "https://godsayantanroy2005-boop.github.io/#person" }
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://godsayantanroy2005-boop.github.io/#project-cli",
+      "name": "Portfolio Generator CLI",
+      "url": "https://godsayantanroy2005-boop.github.io/projects#portfolio-cli",
+      "description": "A TypeScript CLI that generates static portfolio websites from JSON templates for quick personal sites.",
+      "creator": { "@id": "https://godsayantanroy2005-boop.github.io/#person" }
+    }
+  ]
+}
+</script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','sans-serif'] },
+          colors: {
+            'primary-dark': '#0f1724',
+            'secondary-dark': '#111827',
+            accent: '#3B82F6',
+            'accent-hover': '#2563EB',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Mobile Menu Animation */
+    .mobile-menu-icon div { transition: all 0.28s; }
+    .mobile-menu-icon.open div:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mobile-menu-icon.open div:nth-child(2) { opacity: 0; }
+    .mobile-menu-icon.open div:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Neon RGB Text Animation */
+    @keyframes neonGlow {
+      0% { color:#ff004f; text-shadow:0 0 6px #ff004f,0 0 18px #ff6b92; }
+      25% { color:#00ff7f; text-shadow:0 0 6px #00ff7f,0 0 18px #7bffb1; }
+      50% { color:#00e5ff; text-shadow:0 0 6px #00e5ff,0 0 18px #8ff7ff; }
+      75% { color:#d700ff; text-shadow:0 0 6px #d700ff,0 0 18px #e98dff; }
+      100% { color:#ff004f; text-shadow:0 0 6px #ff004f,0 0 18px #ff6b92; }
+    }
+    .neon-text { animation: neonGlow 6s linear infinite; }
+
+    /* RGB Footer Line Animation */
+    @keyframes rgbGlow { 0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)} }
+    .animate-rgbGlow{ animation: rgbGlow 6s linear infinite; }
+
+    /* Back to Top Button */
+    #backToTop{ position:fixed; right:22px; bottom:22px; width:50px;height:50px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;z-index:60;
+      background:linear-gradient(90deg,#3B82F6,#9333EA,#EF4444);
+      background-size:300% 300%; animation:rgbGlow 6s linear infinite; box-shadow:0 6px 20px rgba(59,130,246,0.12);
+      border:none;color:#fff;cursor:pointer;opacity:0;transform:translateY(10px);transition:all .28s ease;}
+    #backToTop.show{opacity:1;transform:translateY(0)}
+    #backToTop:hover{transform:scale(1.06)}
+
+    /* Project Cards */
+    .project-card { background:linear-gradient(180deg, rgba(17,24,39,0.9), rgba(15,20,30,0.9)); border-radius:14px; padding:20px; box-shadow: 0 8px 30px rgba(2,6,23,0.8); border:1px solid rgba(59,130,246,0.06); transition:transform .3s, box-shadow .3s; }
+    .project-card:hover{ transform:translateY(-6px); box-shadow: 0 18px 50px rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.18) }
+
+    /* Toolkit */
+    .tool-badge{ width:110px; height:90px; background:linear-gradient(180deg, rgba(17,24,39,0.7), rgba(12,18,25,0.7)); border-radius:12px; display:flex;flex-direction:column;align-items:center;justify-content:center; gap:6px; box-shadow:0 8px 20px rgba(2,6,23,0.7); border:1px solid rgba(255,255,255,0.02); transition:transform .2s }
+    .tool-badge:hover{ transform:translateY(-6px); box-shadow:0 20px 40px rgba(3,105,161,0.08) }
+
+    /* Footer Icon Glow Pulse */
+    @keyframes pulseGlow {
+      0%,100% { text-shadow: 0 0 8px currentColor, 0 0 15px currentColor; opacity: 1; }
+      50% { text-shadow: 0 0 16px currentColor, 0 0 30px currentColor; opacity: 0.8; }
+    }
+    .footer-icon {
+      animation: pulseGlow 3s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+    .footer-icon:hover {
+      transform: scale(1.25);
+      text-shadow: 0 0 25px currentColor, 0 0 40px currentColor;
+    }
+  </style>
+</head>
+
+<body class="bg-primary-dark text-gray-100">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-secondary-dark/95 backdrop-blur-sm border-b border-slate-900">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#home" class="text-2xl font-bold text-accent hover:text-white">&lt;Developer /&gt;</a>
+      <nav class="hidden md:flex items-center gap-8 text-lg">
+        <a href="#about" class="hover:text-accent transition">About</a>
+        <a href="#projects" class="hover:text-accent transition">Projects</a>
+        <a href="#skills" class="hover:text-accent transition">Skills</a>
+        <a href="#contact" class="px-3 py-1 bg-accent text-white rounded-lg font-semibold hover:bg-accent-hover transition">Contact Me</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden mobile-menu-icon p-2 rounded-lg hover:bg-secondary-dark/80">
+        <div class="w-6 h-0.5 bg-white my-1"></div>
+        <div class="w-6 h-0.5 bg-white my-1"></div>
+        <div class="w-6 h-0.5 bg-white my-1"></div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-secondary-dark">
+      <nav class="flex flex-col p-4 gap-3 text-lg">
+        <a href="#about" class="py-2 px-2 rounded hover:bg-primary-dark">About</a>
+        <a href="#projects" class="py-2 px-2 rounded hover:bg-primary-dark">Projects</a>
+        <a href="#skills" class="py-2 px-2 rounded hover:bg-primary-dark">Skills</a>
+        <a href="#contact" class="py-3 px-2 rounded bg-accent text-black font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4">
+
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center py-20 md:py-28">
+      <div class="w-full grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-accent font-medium mb-3">Hello, I'm</p>
+          <h1 class="text-5xl md:text-7xl font-extrabold mb-4 neon-text">Sayantan Roy</h1>
+          <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">Full Stack Developer & Cloud Enthusiast</h2>
+          <p class="text-gray-400 max-w-xl mb-8">I build accessible, responsive, and performant web applications using modern JavaScript frameworks and robust backend services.</p>
+          <div class="flex gap-4">
+            <a href="#projects" class="px-6 py-3 bg-accent rounded-xl text-black font-bold shadow hover:bg-accent-hover transition">View Projects</a>
+            <a href="#contact" class="px-6 py-3 border border-slate-700 rounded-xl text-gray-300 hover:bg-secondary-dark transition">Get In Touch</a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-gradient-to-br from-slate-800/80 to-slate-900/80 shadow-2xl overflow-hidden border-4 border-accent/40">
+            <img src="https://i.ibb.co/VcbKLsdK/your-photo.jpg" alt="Sayantan Roy" class="w-full h-full object-cover rounded-full border border-slate-700">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 border-t border-slate-800">
+      <h2 class="text-4xl font-bold mb-6 inline-block border-b-2 border-accent/50 pb-2">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-gray-300">
+        <p>I have over 5 years of experience crafting dynamic and robust software solutions. My journey began with a passion for clean code and problem-solving, which quickly led me to embrace the full spectrum of modern web development.</p>
+        <p>I specialize in the MERN stack (MongoDB, Express, React, Node.js) but am always exploring TypeScript, Next.js, and serverless architectures. I love clean UX and scalable backends.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 border-t border-slate-800">
+      <h2 class="text-4xl font-bold mb-6 inline-block border-b-2 border-accent/50 pb-2">Featured Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="project-card"><h3 class="text-accent text-xl font-bold mb-2">E-commerce Microservice Platform</h3><p class="text-gray-400">A scalable full-stack app using React, Node.js, and Docker microservices.</p></div>
+        <div class="project-card"><h3 class="text-accent text-xl font-bold mb-2">Real-Time Data Dashboard</h3><p class="text-gray-400">A responsive dashboard with D3.js, Flask, and WebSocket live updates.</p></div>
+        <div class="project-card"><h3 class="text-accent text-xl font-bold mb-2">Portfolio Generator CLI</h3><p class="text-gray-400">A TypeScript CLI that generates static portfolio websites from JSON.</p></div>
+      </div>
+    </section>
+
+    <!-- TOOLKIT -->
+    <section id="skills" class="py-20 border-t border-slate-800">
+      <h2 class="text-4xl font-bold mb-6 inline-block border-b-2 border-accent/50 pb-2">My Toolkit</h2>
+      <div class="grid gap-6 md:grid-cols-3 lg:grid-cols-5 justify-items-center">
+        <div class="tool-badge"><div class="text-blue-400 text-2xl"><i class="fab fa-react"></i></div><p>React</p></div>
+        <div class="tool-badge"><div class="text-green-400 text-2xl"><i class="fab fa-node-js"></i></div><p>Node.js</p></div>
+        <div class="tool-badge"><div class="text-blue-500 text-2xl"><i class="fa-solid fa-code"></i></div><p>TypeScript</p></div>
+        <div class="tool-badge"><div class="text-cyan-400 text-2xl"><i class="fa-solid fa-wrench"></i></div><p>Tailwind</p></div>
+        <div class="tool-badge"><div class="text-yellow-400 text-2xl"><i class="fab fa-python"></i></div><p>Python</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 border-t border-slate-800">
+      <h2 class="text-4xl font-bold mb-6 inline-block border-b-2 border-accent/50 pb-2">Get In Touch</h2>
+      <div class="max-w-lg mx-auto bg-secondary-dark p-8 rounded-xl shadow-2xl">
+        <p class="text-gray-300 mb-6 text-center">I’m open to new opportunities. Let’s build something amazing together!</p>
+        <form action="https://formspree.io/f/mldoqwoz" method="POST" class="space-y-4">
+          <div><label class="block text-gray-400 mb-2">Name</label><input name="name" required class="w-full p-3 bg-primary-dark border border-slate-700 rounded-lg focus:ring-2 focus:ring-accent"></div>
+          <div><label class="block text-gray-400 mb-2">Email</label><input name="_replyto" type="email" required class="w-full p-3 bg-primary-dark border border-slate-700 rounded-lg focus:ring-2 focus:ring-accent"></div>
+          <div><label class="block text-gray-400 mb-2">Message</label><textarea name="message" rows="5" required class="w-full p-3 bg-primary-dark border border-slate-700 rounded-lg focus:ring-2 focus:ring-accent"></textarea></div>
+          <button type="submit" class="w-full py-3 bg-accent text-black font-bold rounded-xl hover:bg-accent-hover transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-secondary-dark mt-12 py-10 px-4 text-center border-t border-slate-800 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 via-blue-500 to-green-500 animate-rgbGlow"></div>
+    <p class="text-gray-400 mb-4 text-lg">&copy; <span id="current-year"></span> Sayantan Roy. All rights reserved.</p>
+    <div class="flex justify-center gap-6 text-3xl flex-wrap">
+
+      <a href="https://in.linkedin.com/in/sayantan-roy-b9416b325" target="_blank" class="footer-icon text-blue-500"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/godsayantanroy2005-boop" target="_blank" class="footer-icon text-white"><i class="fab fa-github"></i></a>
+      <a href="mailto:godsayantanroy2005@gmail.com" class="footer-icon text-red-500"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/i_am_invincible_6?igsh=M2pybDE1OGwxNWF2" target="_blank" class="footer-icon text-pink-500"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/19LtFjiJVL/" target="_blank" class="footer-icon text-blue-600"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/qr/NIQHGSZSNV64O1" target="_blank" class="footer-icon text-green-500"><i class="fab fa-whatsapp"></i></a>
+
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" aria-label="Back to top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => { menu.classList.toggle('hidden'); btn.classList.toggle('open'); });
+
+    const back = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 420) back.classList.add('show'); else back.classList.remove('show');
+    });
+    back.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  </script>
+</body>
+</html>
